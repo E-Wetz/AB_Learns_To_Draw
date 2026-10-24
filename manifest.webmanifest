@@ -1,0 +1,15 @@
+{
+  "id": "./",
+  "name": "AB Learns to Draw",
+  "short_name": "AB Draws",
+  "description": "30 gentle drawing adventures for AB, on paper or on screen.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#fcfaf7",
+  "theme_color": "#7955bf",
+  "icons": [
+    {"src":"icons/icon-192.png","sizes":"192x192","type":"image/png","purpose":"any"},
+    {"src":"icons/icon-512.png","sizes":"512x512","type":"image/png","purpose":"any maskable"}
+  ]
+}
