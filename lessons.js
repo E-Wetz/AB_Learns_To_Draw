@@ -207,5 +207,100 @@ L('Pascal','Disney',[
  S('A big watchful eye','Add a large circle on the head, then a smaller circle inside.',E(190,105,21),E(196,105,7)),
  S('Two bent legs','Join each lower gap with a bent leg and tiny toes.','M 100 195 L 93 217 L 117 217 L 122 203 M 151 198 L 157 221 L 183 221 L 188 213 L 173 211 L 174 179'),
  S('A smile and head crest','Add a smile inside the head. Close the top with three little points.','M 180 134 Q 208 147 230 124',P([147,83],[143,64],[162,74],[171,55],[183,72],[198,56],[205,77]))]);
-const categoryInfo={All:{icon:'✦',tint:'#eee8f8'},Animals:{icon:'🐾',tint:'#f4e9da'},Princesses:{icon:'♕',tint:'#f5e4ec'},Dinosaurs:{icon:'🦕',tint:'#e6efdf'},Disney:{icon:'✧',tint:'#e4ecf7'}};
+/* Fifteen additional lessons. Outline gaps are closed by later steps. */
+L('Baby dragon','Fantasy',[
+ S('Round dragon cheeks','Draw a wide U for the cheeks. Leave the top open.','M 92 116 C 63 194 107 222 150 222 C 193 222 237 194 208 116'),
+ S('Two little horns','From each end of the U, draw a pointy horn. Join the horns with a curved forehead.','M 92 116 L 91 64 L 123 97 Q 150 86 177 97 L 209 64 L 208 116'),
+ S('Dragon ears','Add a pointed ear outside each cheek. The tips point away from the face.','M 89 126 L 47 105 L 78 161 M 211 126 L 253 105 L 222 161'),
+ S('Kind dragon eyes','Draw two small ovals inside the face.',...eyes(150,142,29)),
+ S('A dragon smile','Add two little nostrils below the eyes and a wide curved smile.',E(132,177,3),E(168,177,3),'M 122 193 Q 150 213 178 193'),
+ S('Forehead scales','Draw two little diamonds down the middle of the forehead. Keep them above the eyes.',P([150,100],[156,107],[150,114],[144,107],[150,100]),P([150,119],[154,124],[150,129],[146,124],[150,119]))]);
+L('Dragon in flight','Fantasy',[
+ S('A long dragon body','Draw a tall oval in the middle, a little below the center.',E(150,178,28,46)),
+ S('A round head','Draw a circle above the body. Let its bottom just touch the body.',E(150,105,27)),
+ S('Two wide wings','From each side of the body, draw up to a wing tip. Zigzag back to the body to make three little wing points.',P([124,159],[62,80],[42,155],[67,143],[82,170],[101,158],[122,183]),P([176,159],[238,80],[258,155],[233,143],[218,170],[199,158],[178,183])),
+ S('A curling tail','Start at the bottom of the body. Curve down and right to a point, then back to the body.','M 143 223 Q 151 272 211 244 Q 169 253 158 222'),
+ S('Eyes and tiny horns','Add two little eyes and a smile. Draw two short pointed horns above the head.',...eyes(150,103,10),smile(150,116),'M 131 86 L 128 63 L 143 79 M 157 79 L 172 63 L 169 86'),
+ S('A cozy belly','Draw a small oval inside the body. Add two little feet outside its lower sides.',E(150,181,13,25),'M 127 204 Q 105 212 115 221 Q 125 225 135 216 M 173 204 Q 195 212 185 221 Q 175 225 165 216')]);
+L('Unicorn portrait','Fantasy',[
+ S('A gentle face','Draw a tall U for the face, leaving the top open.','M 105 105 C 91 175 110 232 150 232 C 190 232 209 175 195 105'),
+ S('Ears and forehead','Draw a pointed ear from each end of the U. Join the ears with two little curves, leaving a gap for the horn.','M 105 105 L 93 59 L 128 88 Q 134 84 141 83 M 159 83 Q 166 84 172 88 L 207 59 L 195 105'),
+ S('A magical horn','Close the forehead gap with a tall, skinny triangle.',P([141,83],[150,31],[159,83])),
+ S('A swooping fringe','Inside the top of the face, draw a soft swoop from left to right.','M 108 109 Q 139 130 179 96 Q 187 99 192 108'),
+ S('Sleepy eyes','Draw two small downward curves for closed eyes. Add two little nostrils near the bottom.','M 116 150 Q 128 165 140 150 M 160 150 Q 172 165 184 150',E(138,202,3),E(162,202,3)),
+ S('Ear details and smile','Add a small triangle inside each ear and a curved smile below the nose.',P([106,91],[103,76],[115,88],[106,91]),P([185,88],[197,76],[194,91],[185,88]),smile(150,215))]);
+L('Unicorn on the moon','Fantasy',[
+ S('A crescent moon','Start near the top right. Curve around the left side to a bottom point. Curve back up inside to close the crescent.','M 208 57 C 64 29 36 225 189 250 C 104 201 120 102 208 57 Z'),
+ S('A little unicorn head','In the open space to the right of the moon, draw a small U. Leave the top open.','M 174 136 C 164 178 175 208 197 208 C 219 208 230 178 220 136'),
+ S('Ears and a horn','Draw two pointed ears above the U. Between them, draw a tall triangle horn.',P([174,136],[172,113],[188,130],[192,130],[197,98],[202,130],[206,130],[222,113],[220,136])),
+ S('A sleepy face','Add two closed eyes, two tiny nostrils and a smile.','M 178 157 Q 183 164 188 157 M 206 157 Q 211 164 216 157',E(191,185,2),E(203,185,2),'M 190 195 Q 197 201 204 195'),
+ S('Twinkling stars','Draw three little diamonds in the empty sky. Leave space around the moon and unicorn.',P([237,59],[243,70],[237,81],[231,70],[237,59]),P([93,47],[98,55],[93,63],[88,55],[93,47]),P([248,216],[253,224],[248,232],[243,224],[248,216]))]);
+L('Cuddly panda','Animals',[
+ S('A big round face','Draw a big circle in the middle.',E(150,157,66)),
+ S('Two round ears','Add one round ear outside each top corner of the head. Each ear starts and ends on the head.','M 88 134 C 45 115 75 55 113 102 M 187 102 C 225 55 255 115 212 134'),
+ S('Panda eye patches','Draw two tall ovals inside the face. Leave space between them.',E(124,148,17,23),E(176,148,17,23)),
+ S('Little watchful eyes','Put one small oval inside each patch.',E(127,147,4,6),E(173,147,4,6)),
+ S('A tiny nose and smile','Add a little triangle nose. Draw two small curves below its bottom point.',P([142,177],[158,177],[150,185],[142,177]),'M 150 185 Q 140 204 131 191 M 150 185 Q 160 204 169 191')]);
+L('Little penguin','Animals',[
+ S('A penguin outline','Draw a tall rounded body. Leave a small gap at each lower corner for the feet.','M 121 235 C 58 218 77 55 150 55 C 223 55 242 218 179 235 M 137 239 Q 150 241 163 239'),
+ S('Two little feet','Close each lower gap with a flat, rounded foot.','M 121 235 Q 91 255 123 255 Q 140 255 137 239 M 163 239 Q 160 255 177 255 Q 209 255 179 235'),
+ S('Flippers','Add a narrow curved flipper outside each side.','M 85.57 132 Q 45 169 85.55 188 M 214.43 132 Q 255 169 214.45 188'),
+ S('A white tummy','Draw a smaller tall oval inside the lower body.',E(150,187,40,40)),
+ S('A cheerful face','Above the tummy, draw two little eyes and a triangle beak.',...eyes(150,115,22),P([141,132],[159,132],[150,145],[141,132]))]);
+L('Garden snail','Animals',[
+ S('A round shell','Draw a circle a little left of the middle.',E(127,147,57)),
+ S('A curly shell pattern','Inside the shell, draw a loose spiral. Leave space between its turns.','M 91 158 C 63 111 153 85 164 137 C 176 182 104 186 108 143 C 111 123 143 126 140 146 Q 138 155 129 151'),
+ S('A long soft body','Below the shell, draw a short line to the right. Curve up into a head, then down and all the way back under the shell.','M 127 204 L 188 204 L 188 161 Q 205 135 222 161 L 222 214 Q 220 232 197 232 L 71 232 Q 40 232 57 214 L 89 189.5'),
+ S('Two feelers','Draw two short lines up from the head, with a little circle at each tip.',P([196,150],[190,127]),P([214,150],[224,127]),E(189,122,5),E(225,122,5)),
+ S('A snail smile','Add a small eye and a smile inside the head. Draw a little leaf beside the snail.',E(207,169,3),'M 203 183 Q 210 191 217 183','M 249 226 Q 230 202 250 196 Q 267 208 249 226 Z')]);
+L('Lucky ladybug','Animals',[
+ S('A round bug body','Draw a tall oval in the middle.',E(150,165,59,65)),
+ S('A little head','Above the body, draw a rounded head. Its ends touch the top of the body.','M 117 111 C 100 54 200 54 183 111'),
+ S('Two wings','Draw one straight line down the middle of the oval. Stop at the outline.',P([150,100],[150,230])),
+ S('Six round spots','Put three little circles inside each wing. Keep them away from the middle line and the edge.',E(126,132,8),E(113,164,8),E(126,199,8),E(174,132,8),E(187,164,8),E(174,199,8)),
+ S('Legs and feelers','Add three short legs outside each side. Draw two feelers above the head.',P([96,140],[76,130]),P([91,165],[69,165]),P([96,190],[76,202]),P([204,140],[224,130]),P([209,165],[231,165]),P([204,190],[224,202]),'M 132 74 Q 118 50 111 59 M 168 74 Q 182 50 189 59')]);
+L('Busy little bee','Animals',[
+ S('A round bee body','Draw a wide oval a little below the middle.',E(150,174,67,42)),
+ S('Two fluttery wings','Draw two loops above the body. Keep the wings outside the oval.','M 108 141 C 62 80 127 56 145 132 M 155 132 C 173 56 238 80 192 141'),
+ S('Bee stripes','Draw two curved lines inside the left half of the body. Stop at the top and bottom edges.','M 120 136.45 Q 103 174 120 211.55 M 141 132.38 Q 126 174 141 215.62'),
+ S('A friendly face','In the clear right half, add an eye and a curved smile.',E(181,163,4),'M 177 185 Q 190 197 201 183'),
+ S('Feelers and a trail','Draw two short feelers above the right end. Add three short dashes behind your bee.',P([193,141],[205,117]),P([207,152],[230,138]),P([66,170],[53,170]),P([40,170],[30,170]),P([18,170],[12,170]))]);
+L('Birthday cupcake','Fun things',[
+ S('A cupcake case','Draw a wide top, two sloping sides and a flat bottom.',P([86,174],[214,174],[198,242],[102,242],[86,174])),
+ S('Fluffy frosting','Start at the top left corner of the case. Draw four fluffy bumps and finish at the top right corner.','M 86 174 C 47 161 75 120 104 134 C 104 94 143 86 159 117 C 185 94 216 116 207 140 C 239 137 244 169 214 174'),
+ S('One birthday candle','Above the middle frosting bump, draw two short sides joined across the top. Stop each side at the frosting.','M 129 98.21 L 129 72 L 141 72 L 141 99.78'),
+ S('A little flame','Draw a teardrop above the candle. Leave a tiny gap below it.','M 135 64 C 114 57 131 46 135 35 C 140 46 156 57 135 64 Z'),
+ S('Pretty decorations','Draw three short lines inside the case and three little sprinkles inside the frosting.',P([118,188],[124,228]),P([150,188],[150,228]),P([182,188],[176,228]),P([95,148],[104,153]),P([139,136],[145,144]),P([180,150],[190,145]))]);
+L('Ice cream dream','Fun things',[
+ S('A crunchy cone','Draw a wide V. Join the top ends with a straight line.',P([98,158],[202,158],[150,258],[98,158])),
+ S('A round scoop','Start at the left top corner. Draw a big round scoop above the cone, ending at the right corner.','M 98 158 C 38 82 111 38 150 74 C 189 38 262 82 202 158'),
+ S('Cone stripes','Draw three short horizontal lines inside the cone. Keep their ends just inside its sides.',P([113,181],[187,181]),P([125,205],[175,205]),P([138,229],[162,229])),
+ S('A happy scoop','Add two little eyes and a smile inside the ice cream.',...eyes(150,117,25),smile(150,134)),
+ S('A cherry on top','Add a little circle above the scoop, with a curved stem. Leave a small gap below the cherry.',E(150,50,10),'M 150 40 Q 151 23 164 25')]);
+L('Rainbow rocket','Fun things',[
+ S('A rocket body','Draw a tall arch with a pointed top. Join the bottom ends with a straight line.','M 112 205 L 112 113 Q 120 73 150 42 Q 180 73 188 113 L 188 205 Z'),
+ S('A round window','Draw a circle in the upper half. Add a smaller circle inside.',E(150,117,23),E(150,117,15)),
+ S('Two rocket fins','Add a triangle outside each lower side.',P([112,157],[79,214],[112,198]),P([188,157],[221,214],[188,198])),
+ S('A fiery tail','Below the bottom edge, zigzag down and up to make three flame tips.',P([125,205],[120,244],[140,232],[150,265],[160,232],[180,244],[175,205])),
+ S('Ready for the stars','Draw a short line across the body below the window. Add a small diamond star on each side.',P([113,164],[187,164]),P([63,70],[69,82],[63,94],[57,82],[63,70]),P([232,107],[238,119],[232,131],[226,119],[232,107]))]);
+L('Sunny sailboat','Fun things',[
+ S('A floating boat','Draw a long top edge. Curve down and back up to make the hull.','M 63 191 L 237 191 Q 218 232 191 232 L 109 232 Q 82 232 63 191 Z'),
+ S('A tall mast','Draw one straight line up from the middle of the boat.',P([150,191],[150,57])),
+ S('Two triangle sails','On each side of the mast, draw a triangle. Leave a little gap beside the mast.',P([140,75],[140,178],[75,178],[140,75]),P([160,92],[221,178],[160,178],[160,92])),
+ S('A little sunshine','Draw a small circle in the empty top right corner. Add four short rays around it.',E(230,59,15),P([230,30],[230,36]),P([230,82],[230,88]),P([201,59],[207,59]),P([253,59],[259,59])),
+ S('Gentle waves','Below the boat, draw three little curved waves. Keep them below the hull.','M 49 254 Q 69 242 89 254 M 124 254 Q 144 242 164 254 M 199 254 Q 219 242 239 254')]);
+L('Happy rainbow','Fun things',[
+ S('A big rainbow arch','Draw a big upside-down U, with both ends at the same height.','M 55 204 C 55 50 245 50 245 204'),
+ S('Two more arches','Inside the first arch, draw two smaller upside-down U shapes. Leave even gaps between them.','M 73 204 C 73 74 227 74 227 204 M 91 204 C 91 98 209 98 209 204'),
+ S('The last color band','Draw one more small arch inside. Join the ends of the arches with a short line on each side.','M 109 204 C 109 122 191 122 191 204',P([55,204],[109,204]),P([191,204],[245,204])),
+ S('A friendly sun','Above the rainbow, add a small circle and four short rays. Leave space above the big arch.',E(150,43,15),P([150,16],[150,22]),P([123,43],[129,43]),P([171,43],[177,43]),P([150,64],[150,70])),
+ S('A smile in the sky','Give the sun two tiny eyes and a little smile. Add two little hearts below the rainbow.',E(145,41,1.5),E(155,41,1.5),'M 145 48 Q 150 54 155 48','M 84 243 C 69 228 63 247 84 258 C 105 247 99 228 84 243 M 216 243 C 201 228 195 247 216 258 C 237 247 231 228 216 243')]);
+L('Smiling flower','Fun things',[
+ S('A round flower middle','Draw a circle above the middle of your page.',E(150,113,25)),
+ S('Four soft petals','Draw a rounded loop outside the top, right, bottom and left of the circle. Each loop starts and ends on the circle.','M 136 92 C 109 38 191 38 164 92 M 171 99 C 225 72 225 154 171 127 M 164 134 C 191 188 109 188 136 134 M 129 127 C 75 154 75 72 129 99'),
+ S('A tall stem','From the bottom petal, draw a line down toward the bottom of your page.',P([150,174.5],[150,258])),
+ S('Two pointed leaves','From the stem, draw a curved leaf on each side. Return each leaf to the stem.','M 150 220 Q 104 223 97 187 Q 136 185 150 220 Z M 150 243 Q 196 246 203 210 Q 164 208 150 243 Z'),
+ S('A sunny little face','Inside the middle circle, draw two eyes and a smile. Your flower is ready to grow!',...eyes(150,108,9),'M 141 120 Q 150 131 159 120')]);
+
+const categoryInfo={All:{icon:'✦',tint:'#eee8f8'},Animals:{icon:'🐾',tint:'#f4e9da'},Princesses:{icon:'♕',tint:'#f5e4ec'},Dinosaurs:{icon:'🦕',tint:'#e6efdf'},Disney:{icon:'✧',tint:'#e4ecf7'},Fantasy:{icon:'✩',tint:'#eee4f7'},'Fun things':{icon:'☀',tint:'#faedd8'}};
 function illustration(lesson,step=Infinity,animate=false,ghost=false){return `<svg viewBox="0 0 300 300" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" aria-label="${lesson.name} drawing" role="img" class="step-drawing">${lesson.steps.map((s,i)=>i<=step?`<g class="${ghost?(i===step?'ghost current':'ghost'):i===step?'new':'old'}">${s.paths.map(d=>`<path d="${d}"${animate&&i===step?' data-animate="true"':''}/>`).join('')}</g>`:'').join('')}</svg>`;}

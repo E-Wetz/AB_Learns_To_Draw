@@ -1,6 +1,6 @@
 # AB Learns to Draw
 
-An iPad drawing studio for AB: 30 beginner lessons with animated line demonstrations, written instructions, paper mode, an on-screen drawing canvas, optional gentle music, and progress saved on the device. No narration, account, ads, or backend service is needed.
+An iPad drawing studio for AB: 45 beginner lessons with animated line demonstrations, written instructions, paper mode, an on-screen drawing canvas, optional gentle music, and progress saved on the device. No narration, account, ads, or backend service is needed.
 
 ## Publish the same way as ABs_Game
 
@@ -24,6 +24,6 @@ The revised artwork uses a separate saved-canvas version so earlier sketches are
 
 ## Artwork review
 
-All 30 completed illustrations and every cumulative teaching step were rendered and visually reviewed. The revised drawings use matching step descriptions and the same vector paths for cards, demonstrations, tracing guides, and final previews. There are no hidden masks that remove lines without telling the learner. Some lines intentionally meet, such as connected limbs, facial features, shell panels, and castle walls.
+All 45 completed illustrations and every cumulative teaching step were rendered and visually reviewed. The revised drawings use matching step descriptions and the same vector paths for cards, demonstrations, tracing guides, and final previews. There are no hidden masks that remove lines without telling the learner. Some lines intentionally meet, such as connected limbs, facial features, shell panels, and castle walls.
 
 The local source project includes `outputs/audit/` with finished-picture contact sheets and step-by-step review sheets. These development review files are excluded from the published app folder.

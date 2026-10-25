@@ -1,4 +1,4 @@
-const CACHE='ab-draw-v5-20261024';
+const CACHE='ab-draw-v6-20261025';
 const FILES=['./','index.html','style.css','lessons.js','app.js','manifest.webmanifest','icons/icon.svg','icons/icon-180.png','icons/icon-192.png','icons/icon-512.png'];
 self.addEventListener('install',event=>event.waitUntil((async()=>{const cache=await caches.open(CACHE);await cache.addAll(FILES.map(file=>new Request(new URL(file,self.registration.scope),{cache:'reload'})));await self.skipWaiting();})()));
 self.addEventListener('activate',event=>event.waitUntil((async()=>{for(const key of await caches.keys())if(key.startsWith('ab-draw-')&&key!==CACHE)await caches.delete(key);await self.clients.claim();})()));
